@@ -4,6 +4,7 @@ import javafx.event.EventHandler;
 import javafx.fxml.FXML;
 import javafx.geometry.Insets;
 import javafx.geometry.Pos;
+import javafx.scene.control.CheckBox;
 import javafx.scene.control.Label;
 import javafx.scene.input.MouseEvent;
 import javafx.scene.layout.HBox;
@@ -26,8 +27,10 @@ public class MainController {
     private HBox semestersContainer;
 
     @FXML
-    private Label totalCreditsLabel;
+    private javafx.scene.text.TextFlow totalCreditsLabel;
 
+    @FXML
+    CheckBox englishRequirementCheckBox;
     private DataManager dataManager;
     private Major major;
     private Plan plan;
@@ -39,8 +42,23 @@ public class MainController {
 
         major = new Major("Computer Science", 120, dataManager.getAllCourses());
         plan = new Plan(major, true);
-        showAllCourses();
+
+        englishRequirementCheckBox.selectedProperty().addListener((observable, oldValue, newValue) -> {
+
+            // newValue מכיל את המצב החדש (true אם מסומן, false אם לא)
+            boolean needEnglish = !newValue; // אם מסומן -> יש פטור -> לא צריך אנגלית
+
+
+            plan.setNeedEnglishCourses(needEnglish);
+
+            // הפקודה הזו מכריחה את JavaFX לבצע את עדכון התצוגה מיד בסוף האירוע הנוכחי
+            javafx.application.Platform.runLater(() -> updateTotalCreditsLabel());
+        });
+        plan.setNeedEnglishCourses(!englishRequirementCheckBox.isSelected());
+
         updateTotalCreditsLabel();
+        showAllCourses();
+
 
 
 
@@ -157,40 +175,50 @@ public class MainController {
         return names;
     }
     private void updateTotalCreditsLabel() {
-        StringBuilder sb = new StringBuilder();
-        Color color = plan.isLegalPlan() ? Color.GREEN : Color.RED;
-        totalCreditsLabel.setTextFill(color);
-        sb.append("סה\"כ נקודות בתכנית: ");
-        sb.append(plan.getCurrentCredits());
-        int requiredCredits = major.getRequiredCredits();
-        sb.append(" / ").append(requiredCredits).append(" נ\"ז");
-        if(plan.getCurrentCredits() >= requiredCredits) {
-            sb.append(" ✔");
-        } else {
-            sb.append(" ✘");
-            sb.append(" (נדרשות עוד ")
-              .append(plan.getMissingCredits())
-              .append(" נ\"ז)");
+        // 1. ניקוי הטקסט הקודם
+        totalCreditsLabel.getChildren().clear();
 
-        }
-        if(!plan.gotAllMandatoryCourses()) {
-            sb.append("\nחסרים קורסי חובה! ✘");
+        // הגדרת כיוון מימין לשמאל
+        totalCreditsLabel.setNodeOrientation(javafx.geometry.NodeOrientation.RIGHT_TO_LEFT);
 
-        } else {
-            sb.append("\nכל קורסי החובה קיימים ✔");
+        // --- שורה 1: נקודות זכות ---
+        addStyledText("סה\"כ נקודות בתכנית: ", Color.BLACK);
 
-        }
-        if(!plan.areAllSemestersLegal()) {
-            sb.append("\nיש סמסטרים לא חוקיים! ✘");
+        int current = plan.getCurrentCredits();
+        int required = major.getRequiredCredits();
+        boolean creditsOk = plan.getMissingCredits() <= 0;
+
+        addStyledText(current + " / " + required + " נ\"ז ", creditsOk ? Color.GREEN : Color.RED);
+        addStyledText(creditsOk ? "✔\n" : "✘\n", creditsOk ? Color.GREEN : Color.RED);
+
+        // --- שורה 2: קורסי חובה ---
+        if (plan.gotAllMandatoryCourses()) {
+            addStyledText("כל קורסי החובה קיימים ✔\n", Color.GREEN);
         } else {
-            sb.append("\nכל הסמסטרים חוקיים ✔");
+            addStyledText("חסרים קורסי חובה! ✘\n", Color.RED);
         }
-        if(!plan.isCompleteEnglishRequirement()) {
-            sb.append("\nדרישת אנגלית לא הושלמה! ✘");
+
+        // --- שורה 3: סמסטרים חוקיים ---
+        if (plan.areAllSemestersLegal()) {
+            addStyledText("כל הסמסטרים חוקיים ✔\n", Color.GREEN);
         } else {
-            sb.append("\nדרישת אנגלית הושלמה ✔");
+            addStyledText("יש סמסטרים לא חוקיים! ✘\n", Color.RED);
         }
-        totalCreditsLabel.setText(sb.toString());
+
+        // --- שורה 4: אנגלית ---
+        if (plan.isCompleteEnglishRequirement()) {
+            addStyledText("דרישת אנגלית הושלמה ✔", Color.GREEN);
+        } else {
+            addStyledText("דרישת אנגלית לא הושלמה! ✘", Color.RED);
+        }
+    }
+
+    // פונקציית עזר ליצירת טקסט מעוצב
+    private void addStyledText(String content, Color color) {
+        javafx.scene.text.Text textNode = new javafx.scene.text.Text(content);
+        textNode.setFill(color);
+        textNode.setFont(Font.font("Arial", FontWeight.BOLD, 14));
+        totalCreditsLabel.getChildren().add(textNode);
     }
 
 }

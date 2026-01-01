@@ -1,14 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.CheckBox?>
 <?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TextField?>
 <?import javafx.scene.layout.BorderPane?>
 <?import javafx.scene.layout.HBox?>
 <?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.TextFlow?>
 
-<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="900.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.MainController">
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="900.0" xmlns="http://javafx.com/javafx/25" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.MainController">
     <right>
-        <VBox spacing="5.0" prefWidth="280.0" style="-fx-padding: 10; -fx-background-color: #f4f4f4;" BorderPane.alignment="CENTER">
+        <VBox prefWidth="280.0" spacing="5.0" style="-fx-padding: 10; -fx-background-color: #f4f4f4;" BorderPane.alignment="CENTER">
             <children>
                 <javafx.scene.control.TextField fx:id="searchField" promptText="חפש קורס..." style="-fx-background-radius: 15; -fx-padding: 8;" />
 
@@ -28,9 +30,10 @@
         </ScrollPane>
     </center>
     <bottom>
-        <HBox alignment="CENTER_RIGHT" prefHeight="50.0" style="-fx-background-color: #f0f0f0; -fx-padding: 10;" BorderPane.alignment="CENTER">
+        <HBox alignment="CENTER_RIGHT"  spacing="20.0" minHeight="50.0" prefHeight="-1" style="-fx-background-color: #f0f0f0; -fx-padding: 10;" BorderPane.alignment="CENTER">
             <children>
-                <Label fx:id="totalCreditsLabel" style="-fx-font-weight: bold; -fx-font-size: 14px;" text="סה&quot;כ נקודות: 0" />
+            <CheckBox fx:id="englishRequirementCheckBox" layoutX="50.0" mnemonicParsing="false" text="האם עומד בדרישות אנגלית?" />
+                <javafx.scene.text.TextFlow fx:id="totalCreditsLabel" textAlignment="RIGHT" />
             </children>
         </HBox>
     </bottom>

@@ -16,6 +16,10 @@ public class Plan {
         this.needEnglishCourses = needEnglishCourses;
     }
 
+    public void setNeedEnglishCourses(boolean needEnglishCourses) {
+        this.needEnglishCourses = needEnglishCourses;
+    }
+
     public void addSemester(Semester semester) {
         semesters.add(semester);
         recalculate();
