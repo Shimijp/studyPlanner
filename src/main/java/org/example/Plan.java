@@ -91,6 +91,10 @@ public class Plan {
         return Math.max(0, major.getRequiredCredits() - currentCredits);
     }
 
+    public int getCurrentCredits() {
+        return currentCredits;
+    }
+
     // Getters / Setters
     public Major getMajor() { return major; }
     public List<Semester> getSemesters() { return semesters; }

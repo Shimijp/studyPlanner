@@ -1,6 +1,9 @@
 package org.example;
+
+
 import java.util.List;
 import java.util.Objects;
+
 public class Semester {
     private String semesterName;
     private String semesterYear;
@@ -135,6 +138,15 @@ public class Semester {
     public int hashCode() {
         return Objects.hash(semesterName, semesterYear, semesterCode, courses, isLegalSemester, numCredits);
     }
+    public void addCourse(Course c) {
+        if (this.courses == null) {
+            this.courses = new java.util.ArrayList<>();
+        }
+        this.courses.add(c);
+        // עדכון אוטומטי של הנקודות אחרי הוספה
+        this.numCredits = calculateTotalCredits();
+    }
+
 
 
 }
