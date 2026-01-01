@@ -1,0 +1,1071 @@
+[
+    {
+        "id": 20476,
+        "name": "מתמטיקה בדידה",
+        "credits": 4,
+        "prerequisites": [],
+        "semesters": [
+            "A",
+            "B",
+            "C"
+        ],
+        "isAdvanced": false,
+        "isSemniarion": false,
+        "isWorkshop": false,
+        "isMandatory": true,
+        "isEnglish": false
+    },
+    {
+        "id": 20109,
+        "name": "אלגברה לינארית 1",
+        "credits": 7,
+        "prerequisites": [],
+        "semesters": [
+            "A",
+            "B",
+            "C"
+        ],
+        "isAdvanced": false,
+        "isSemniarion": false,
+        "isWorkshop": false,
+        "isMandatory": true,
+        "isEnglish": false
+    },
+    {
+        "id": 20229,
+        "name": "אלגברה לינארית 2",
+        "credits": 5,
+        "prerequisites": [
+            20109
+        ],
+        "semesters": [
+            "A",
+            "B",
+            "C"
+        ],
+        "isAdvanced": false,
+        "isSemniarion": false,
+        "isWorkshop": false,
+        "isMandatory": true,
+        "isEnglish": false
+    },
+    {
+        "id": 20474,
+        "name": "חשבון אינפיניטסימלי 1",
+        "credits": 7,
+        "prerequisites": [],
+        "semesters": [
+            "A",
+            "B",
+            "C"
+        ],
+        "isAdvanced": false,
+        "isSemniarion": false,
+        "isWorkshop": false,
+        "isMandatory": true,
+        "isEnglish": false
+    },
+    {
+        "id": 20475,
+        "name": "חשבון אינפיניטסימלי 2",
+        "credits": 7,
+        "prerequisites": [
+            20474
+        ],
+        "semesters": [
+            "A",
+            "B",
+            "C"
+        ],
+        "isAdvanced": false,
+        "isSemniarion": false,
+        "isWorkshop": false,
+        "isMandatory": true,
+        "isEnglish": false
+    },
+    {
+        "id": 20425,
+        "name": "הסתברות ומבוא לסטטיסטיקה למדעי המחשב",
+        "credits": 5,
+        "prerequisites": [
+            20474,
+            20475
+        ],
+        "semesters": [
+            "A",
+            "B",
+            "C"
+        ],
+        "isAdvanced": false,
+        "isSemniarion": false,
+        "isWorkshop": false,
+        "isMandatory": true,
+        "isEnglish": false
+    },
+    {
+        "id": 20441,
+        "name": "מבוא למדעי המחשב ושפת Java",
+        "credits": 6,
+        "prerequisites": [],
+        "semesters": [
+            "A",
+            "B"
+        ],
+        "isAdvanced": false,
+        "isSemniarion": false,
+        "isWorkshop": false,
+        "isMandatory": true,
+        "isEnglish": false
+    },
+    {
+        "id": 20407,
+        "name": "מבני נתונים ומבוא לאלגוריתמים",
+        "credits": 6,
+        "prerequisites": [
+            20441,
+            20476
+        ],
+        "semesters": [
+            "A",
+            "B"
+        ],
+        "isAdvanced": false,
+        "isSemniarion": false,
+        "isWorkshop": false,
+        "isMandatory": true,
+        "isEnglish": false
+    },
+    {
+        "id": 20417,
+        "name": "אלגוריתמים",
+        "credits": 5,
+        "prerequisites": [
+            20476,
+            20407,
+            20441
+        ],
+        "semesters": [
+            "A",
+            "B"
+        ],
+        "isAdvanced": false,
+        "isSemniarion": false,
+        "isWorkshop": false,
+        "isMandatory": true,
+        "isEnglish": false
+    },
+    {
+        "id": 20465,
+        "name": "מעבדה בתכנות מערכות",
+        "credits": 4,
+        "prerequisites": [
+            20441
+        ],
+        "semesters": [
+            "A",
+            "B"
+        ],
+        "isAdvanced": false,
+        "isSemniarion": false,
+        "isWorkshop": false,
+        "isMandatory": true,
+        "isEnglish": false
+    },
+    {
+        "id": 20604,
+        "name": "מודלים חישוביים",
+        "credits": 5,
+        "prerequisites": [
+            20407
+        ],
+        "semesters": [
+            "A",
+            "B"
+        ],
+        "isAdvanced": false,
+        "isSemniarion": false,
+        "isWorkshop": false,
+        "isMandatory": true,
+        "isEnglish": false
+    },
+    {
+        "id": 20594,
+        "name": "מערכות הפעלה",
+        "credits": 4,
+        "prerequisites": [
+            20465,
+            20407
+        ],
+        "semesters": [
+            "A",
+            "B"
+        ],
+        "isAdvanced": true,
+        "isSemniarion": false,
+        "isWorkshop": false,
+        "isMandatory": true,
+        "isEnglish": false
+    },
+    {
+        "id": 20905,
+        "name": "שפות תכנות",
+        "credits": 4,
+        "prerequisites": [
+            20407,
+            20604,
+            20465,
+            20417
+        ],
+        "semesters": [
+            "B"
+        ],
+        "isAdvanced": true,
+        "isSemniarion": false,
+        "isWorkshop": false,
+        "isMandatory": true,
+        "isEnglish": false
+    },
+    {
+        "id": 20471,
+        "name": "ארגון המחשב",
+        "credits": 4,
+        "prerequisites": [
+            20441
+        ],
+        "semesters": [
+            "A",
+            "C"
+        ],
+        "isAdvanced": false,
+        "isSemniarion": false,
+        "isWorkshop": false,
+        "isMandatory": true,
+        "isEnglish": false
+    },
+    {
+        "id": 20466,
+        "name": "לוגיקה למדעי המחשב",
+        "credits": 4,
+        "prerequisites": [
+            20476
+        ],
+        "semesters": [
+            "A",
+            "B"
+        ],
+        "isAdvanced": false,
+        "isSemniarion": false,
+        "isWorkshop": false,
+        "isMandatory": true,
+        "isEnglish": false
+    },
+    {
+        "id": 20277,
+        "name": "מערכות בסיסי-נתונים",
+        "credits": 4,
+        "prerequisites": [
+            20441,
+            20476
+        ],
+        "semesters": [
+            "A",
+            "C"
+        ],
+        "isAdvanced": false,
+        "isSemniarion": false,
+        "isWorkshop": false,
+        "isMandatory": false,
+        "isEnglish": false
+    },
+    {
+        "id": 20436,
+        "name": "עקרונות ניתוח מערכות מידע",
+        "credits": 4,
+        "prerequisites": [
+            20277
+        ],
+        "semesters": [
+            "A",
+            "B"
+        ],
+        "isAdvanced": false,
+        "isSemniarion": false,
+        "isWorkshop": false,
+        "isMandatory": false,
+        "isEnglish": false
+    },
+    {
+        "id": 20462,
+        "name": "אנליזה נומרית 1",
+        "credits": 4,
+        "prerequisites": [
+            20441,
+            20109,
+            20474,
+            20475
+        ],
+        "semesters": [
+            "B"
+        ],
+        "isAdvanced": false,
+        "isSemniarion": false,
+        "isWorkshop": false,
+        "isMandatory": false,
+        "isEnglish": false
+    },
+    {
+        "id": 20296,
+        "name": "תורת הקודים",
+        "credits": 4,
+        "prerequisites": [
+            20109
+        ],
+        "semesters": [
+            "C"
+        ],
+        "isAdvanced": false,
+        "isSemniarion": false,
+        "isWorkshop": false,
+        "isMandatory": false,
+        "isEnglish": false
+    },
+    {
+        "id": 20364,
+        "name": "קומפילציה",
+        "credits": 4,
+        "prerequisites": [
+            20440,
+            20465
+        ],
+        "semesters": [
+            "A"
+        ],
+        "isAdvanced": true,
+        "isSemniarion": false,
+        "isWorkshop": false,
+        "isMandatory": false,
+        "isEnglish": false
+    },
+    {
+        "id": 20554,
+        "name": "תכנות מתקדם בשפת ג'אווה",
+        "credits": 4,
+        "prerequisites": [
+            20407
+        ],
+        "semesters": [
+            "A",
+            "B"
+        ],
+        "isAdvanced": true,
+        "isSemniarion": false,
+        "isWorkshop": false,
+        "isMandatory": false,
+        "isEnglish": false
+    },
+    {
+        "id": 20562,
+        "name": "גרפיקה ממוחשבת",
+        "credits": 4,
+        "prerequisites": [
+            20474,
+            20475,
+            20109,
+            20407,
+            20465
+        ],
+        "semesters": [
+            "B"
+        ],
+        "isAdvanced": true,
+        "isSemniarion": false,
+        "isWorkshop": false,
+        "isMandatory": false,
+        "isEnglish": false
+    },
+    {
+        "id": 20906,
+        "name": "תכנות מונחה עצמים",
+        "credits": 4,
+        "prerequisites": [
+            20407
+        ],
+        "semesters": [
+            "A",
+            "B"
+        ],
+        "isAdvanced": true,
+        "isSemniarion": false,
+        "isWorkshop": false,
+        "isMandatory": false,
+        "isEnglish": false
+    },
+    {
+        "id": 20937,
+        "name": "תכנות מערכות דפנסיבי",
+        "credits": 4,
+        "prerequisites": [
+            20554,
+            20465,
+            20594
+        ],
+        "semesters": [
+            "B",
+            "C"
+        ],
+        "isAdvanced": true,
+        "isSemniarion": false,
+        "isWorkshop": false,
+        "isMandatory": false,
+        "isEnglish": false
+    },
+    {
+        "id": 20551,
+        "name": "מבוא לבינה מלאכותית",
+        "credits": 4,
+        "prerequisites": [
+            20417,
+            20407,
+            20441,
+            20425
+        ],
+        "semesters": [
+            "A",
+            "B"
+        ],
+        "isAdvanced": true,
+        "isSemniarion": false,
+        "isWorkshop": false,
+        "isMandatory": false,
+        "isEnglish": false
+    },
+    {
+        "id": 20574,
+        "name": "מערכות נתונים - טכנולוגיות ואלגוריתמים",
+        "credits": 4,
+        "prerequisites": [
+            20407,
+            20277
+        ],
+        "semesters": [
+            "A",
+            "B"
+        ],
+        "isAdvanced": true,
+        "isSemniarion": false,
+        "isWorkshop": false,
+        "isMandatory": false,
+        "isEnglish": false
+    },
+    {
+        "id": 20582,
+        "name": "מבוא לרשתות תקשורת מחשבים",
+        "credits": 4,
+        "prerequisites": [
+            20425,
+            20407
+        ],
+        "semesters": [],
+        "isAdvanced": true,
+        "isSemniarion": false,
+        "isWorkshop": false,
+        "isMandatory": false,
+        "isEnglish": false
+    },
+    {
+        "id": 20595,
+        "name": "כריית מידע",
+        "credits": 4,
+        "prerequisites": [
+            20425,
+            20407
+        ],
+        "semesters": [
+            "B"
+        ],
+        "isAdvanced": true,
+        "isSemniarion": false,
+        "isWorkshop": false,
+        "isMandatory": false,
+        "isEnglish": false
+    },
+    {
+        "id": 20596,
+        "name": "שפת פרולוג והיבטים לבינה מלאכותית",
+        "credits": 4,
+        "prerequisites": [
+            20466,
+            20407
+        ],
+        "semesters": [],
+        "isAdvanced": true,
+        "isSemniarion": false,
+        "isWorkshop": false,
+        "isMandatory": false,
+        "isEnglish": false
+    },
+    {
+        "id": 20580,
+        "name": "מבוא לקריפטוגרפיה",
+        "credits": 4,
+        "prerequisites": [
+            20109,
+            20425,
+            20441
+        ],
+        "semesters": [
+            "A"
+        ],
+        "isAdvanced": true,
+        "isSemniarion": false,
+        "isWorkshop": false,
+        "isMandatory": false,
+        "isEnglish": false
+    },
+    {
+        "id": 20581,
+        "name": "חישוביות ביולוגית",
+        "credits": 4,
+        "prerequisites": [
+            20425,
+            20407,
+            20474,
+            20109
+        ],
+        "semesters": [
+            "A"
+        ],
+        "isAdvanced": true,
+        "isSemniarion": false,
+        "isWorkshop": false,
+        "isMandatory": false,
+        "isEnglish": false
+    },
+    {
+        "id": 20940,
+        "name": "מבוא לאבטחת המרחב המקוון",
+        "credits": 4,
+        "prerequisites": [
+            20594,
+            20582
+        ],
+        "semesters": [
+            "A"
+        ],
+        "isAdvanced": true,
+        "isSemniarion": false,
+        "isWorkshop": false,
+        "isMandatory": false,
+        "isEnglish": false
+    },
+    {
+        "id": 20944,
+        "name": "רובוטיקה אלגוריתמית",
+        "credits": 4,
+        "prerequisites": [
+            20109,
+            20229,
+            20474,
+            20475,
+            20441,
+            20417
+        ],
+        "semesters": [
+            "A"
+        ],
+        "isAdvanced": true,
+        "isSemniarion": false,
+        "isWorkshop": false,
+        "isMandatory": false,
+        "isEnglish": false
+    },
+    {
+        "id": 20946,
+        "name": "מבוא לבדיקות תוכנה (אנגלית)",
+        "credits": 4,
+        "prerequisites": [
+            20441,
+            20417,
+            20465,
+            20440,
+            20476
+        ],
+        "semesters": [
+            "B"
+        ],
+        "isAdvanced": true,
+        "isSemniarion": false,
+        "isWorkshop": false,
+        "isMandatory": false,
+        "isEnglish": true
+    },
+    {
+        "id": 20945,
+        "name": "אשנב למחקר במדעי המחשב למצטיינים",
+        "credits": 4,
+        "prerequisites": [],
+        "semesters": [
+            "A"
+        ],
+        "isAdvanced": true,
+        "isSemniarion": false,
+        "isWorkshop": false,
+        "isMandatory": false,
+        "isEnglish": false
+    },
+    {
+        "id": 20585,
+        "name": "מבוא לתורת החישוביות והסיבוכיות",
+        "credits": 5,
+        "prerequisites": [
+            20417,
+            20440
+        ],
+        "semesters": [],
+        "isAdvanced": true,
+        "isSemniarion": false,
+        "isWorkshop": false,
+        "isMandatory": false,
+        "isEnglish": false
+    },
+    {
+        "id": 20900,
+        "name": "אנליזה נומרית 2",
+        "credits": 4,
+        "prerequisites": [
+            20462
+        ],
+        "semesters": [],
+        "isAdvanced": true,
+        "isSemniarion": false,
+        "isWorkshop": false,
+        "isMandatory": false,
+        "isEnglish": false
+    },
+    {
+        "id": 20563,
+        "name": "סדנה בבסיסי-נתונים",
+        "credits": 3,
+        "prerequisites": [
+            20277
+        ],
+        "semesters": [
+            "B",
+            "C"
+        ],
+        "isAdvanced": true,
+        "isSemniarion": false,
+        "isWorkshop": true,
+        "isMandatory": false,
+        "isEnglish": false
+    },
+    {
+        "id": 20587,
+        "name": "סדנה במערכות הפעלה",
+        "credits": 3,
+        "prerequisites": [
+            20594
+        ],
+        "semesters": [
+            "B"
+        ],
+        "isAdvanced": true,
+        "isSemniarion": false,
+        "isWorkshop": true,
+        "isMandatory": false,
+        "isEnglish": false
+    },
+    {
+        "id": 20588,
+        "name": "סדנה בתקשורת מחשבים",
+        "credits": 3,
+        "prerequisites": [
+            20582,
+            20594
+        ],
+        "semesters": [
+            "C"
+        ],
+        "isAdvanced": true,
+        "isSemniarion": false,
+        "isWorkshop": true,
+        "isMandatory": false,
+        "isEnglish": false
+    },
+    {
+        "id": 20931,
+        "name": "סדנה באבטחת מידע",
+        "credits": 3,
+        "prerequisites": [
+            20582,
+            20940
+        ],
+        "semesters": [
+            "A"
+        ],
+        "isAdvanced": true,
+        "isSemniarion": false,
+        "isWorkshop": true,
+        "isMandatory": false,
+        "isEnglish": false
+    },
+    {
+        "id": 20936,
+        "name": "סדנה במדעי הנתונים",
+        "credits": 3,
+        "prerequisites": [
+            20425,
+            20551,
+            20417
+        ],
+        "semesters": [
+            "A",
+            "C"
+        ],
+        "isAdvanced": true,
+        "isSemniarion": false,
+        "isWorkshop": true,
+        "isMandatory": false,
+        "isEnglish": false
+    },
+    {
+        "id": 20586,
+        "name": "סדנה בתכנות מונחה עצמים",
+        "credits": 3,
+        "prerequisites": [
+            20554,
+            20906
+        ],
+        "semesters": [
+            "A",
+            "B"
+        ],
+        "isAdvanced": true,
+        "isSemniarion": false,
+        "isWorkshop": true,
+        "isMandatory": false,
+        "isEnglish": false
+    },
+    {
+        "id": 20964,
+        "name": "הרצאות אורח – סדנה נושא מיוחד במדעי המחשב (English)",
+        "credits": 3,
+        "prerequisites": [],
+        "semesters": [],
+        "isAdvanced": true,
+        "isSemniarion": false,
+        "isWorkshop": true,
+        "isMandatory": false,
+        "isEnglish": true
+    },
+    {
+        "id": 20975,
+        "name": "הרצאות אורח- סדנה נושא מיוחד במדעי המחשב",
+        "credits": 3,
+        "prerequisites": [
+            20905,
+            20942
+        ],
+        "semesters": [
+            "B"
+        ],
+        "isAdvanced": true,
+        "isSemniarion": false,
+        "isWorkshop": true,
+        "isMandatory": false,
+        "isEnglish": false
+    },
+    {
+        "id": 20503,
+        "name": "סדנה בתכנות מתקדם בשפת Java",
+        "credits": 3,
+        "prerequisites": [
+            20554
+        ],
+        "semesters": [
+            "A",
+            "B"
+        ],
+        "isAdvanced": true,
+        "isSemniarion": false,
+        "isWorkshop": true,
+        "isMandatory": false,
+        "isEnglish": false
+    },
+    {
+        "id": 20504,
+        "name": "סדנה בעקרונות שפות תכנות",
+        "credits": 3,
+        "prerequisites": [
+            20407,
+            20440
+        ],
+        "semesters": [],
+        "isAdvanced": true,
+        "isSemniarion": false,
+        "isWorkshop": true,
+        "isMandatory": false,
+        "isEnglish": false
+    },
+    {
+        "id": 20368,
+        "name": "סמינר בהנדסת תוכנה",
+        "credits": 3,
+        "prerequisites": [],
+        "semesters": [
+            "A",
+            "B",
+            "C"
+        ],
+        "isAdvanced": true,
+        "isSemniarion": true,
+        "isWorkshop": false,
+        "isMandatory": false,
+        "isEnglish": false
+    },
+    {
+        "id": 20369,
+        "name": "סמינר באנליזה נומרית",
+        "credits": 3,
+        "prerequisites": [],
+        "semesters": [
+            "A",
+            "B",
+            "C"
+        ],
+        "isAdvanced": true,
+        "isSemniarion": true,
+        "isWorkshop": false,
+        "isMandatory": false,
+        "isEnglish": false
+    },
+    {
+        "id": 20370,
+        "name": "סמינר בחישוביות",
+        "credits": 3,
+        "prerequisites": [],
+        "semesters": [
+            "A",
+            "B",
+            "C"
+        ],
+        "isAdvanced": true,
+        "isSemniarion": true,
+        "isWorkshop": false,
+        "isMandatory": false,
+        "isEnglish": false
+    },
+    {
+        "id": 20371,
+        "name": "סמינר במערכות בסיסי נתונים",
+        "credits": 3,
+        "prerequisites": [
+            20277
+        ],
+        "semesters": [
+            "A"
+        ],
+        "isAdvanced": true,
+        "isSemniarion": true,
+        "isWorkshop": false,
+        "isMandatory": false,
+        "isEnglish": false
+    },
+    {
+        "id": 20372,
+        "name": "סמינר בבינה מלאכותית",
+        "credits": 3,
+        "prerequisites": [],
+        "semesters": [
+            "A",
+            "B",
+            "C"
+        ],
+        "isAdvanced": true,
+        "isSemniarion": true,
+        "isWorkshop": false,
+        "isMandatory": false,
+        "isEnglish": false
+    },
+    {
+        "id": 20373,
+        "name": "סמינר במערכות מידע",
+        "credits": 3,
+        "prerequisites": [
+            20436
+        ],
+        "semesters": [
+            "B"
+        ],
+        "isAdvanced": true,
+        "isSemniarion": true,
+        "isWorkshop": false,
+        "isMandatory": false,
+        "isEnglish": false
+    },
+    {
+        "id": 20374,
+        "name": "סמינר בקריפטוגרפיה",
+        "credits": 3,
+        "prerequisites": [
+            20580
+        ],
+        "semesters": [
+            "A",
+            "B",
+            "C"
+        ],
+        "isAdvanced": true,
+        "isSemniarion": true,
+        "isWorkshop": false,
+        "isMandatory": false,
+        "isEnglish": false
+    },
+    {
+        "id": 20375,
+        "name": "סמינר בנושא מיוחד במדעי המחשב",
+        "credits": 3,
+        "prerequisites": [],
+        "semesters": [
+            "A",
+            "B",
+            "C"
+        ],
+        "isAdvanced": true,
+        "isSemniarion": true,
+        "isWorkshop": false,
+        "isMandatory": false,
+        "isEnglish": false
+    },
+    {
+        "id": 20388,
+        "name": "סמינר באלגוריתמים מבוזרים ותקשורת",
+        "credits": 3,
+        "prerequisites": [],
+        "semesters": [
+            "A",
+            "B",
+            "C"
+        ],
+        "isAdvanced": true,
+        "isSemniarion": true,
+        "isWorkshop": false,
+        "isMandatory": false,
+        "isEnglish": false
+    },
+    {
+        "id": 20389,
+        "name": "סמינר במערכות הפעלה",
+        "credits": 3,
+        "prerequisites": [],
+        "semesters": [
+            "A",
+            "B",
+            "C"
+        ],
+        "isAdvanced": true,
+        "isSemniarion": true,
+        "isWorkshop": false,
+        "isMandatory": false,
+        "isEnglish": false
+    },
+    {
+        "id": 20390,
+        "name": "סמינר באלגוריתמים",
+        "credits": 3,
+        "prerequisites": [],
+        "semesters": [
+            "A",
+            "B",
+            "C"
+        ],
+        "isAdvanced": true,
+        "isSemniarion": true,
+        "isWorkshop": false,
+        "isMandatory": false,
+        "isEnglish": false
+    },
+    {
+        "id": 20552,
+        "name": "סמינר בביואינפורמטיקה",
+        "credits": 3,
+        "prerequisites": [],
+        "semesters": [
+            "A",
+            "B",
+            "C"
+        ],
+        "isAdvanced": true,
+        "isSemniarion": true,
+        "isWorkshop": false,
+        "isMandatory": false,
+        "isEnglish": false
+    },
+    {
+        "id": 20560,
+        "name": "סמינר בהוראת מדעי המחשב",
+        "credits": 3,
+        "prerequisites": [],
+        "semesters": [
+            "B"
+        ],
+        "isAdvanced": true,
+        "isSemniarion": true,
+        "isWorkshop": false,
+        "isMandatory": false,
+        "isEnglish": false
+    },
+    {
+        "id": 20583,
+        "name": "סמינר במערכות מקביליות",
+        "credits": 3,
+        "prerequisites": [],
+        "semesters": [
+            "A",
+            "B",
+            "C"
+        ],
+        "isAdvanced": true,
+        "isSemniarion": true,
+        "isWorkshop": false,
+        "isMandatory": false,
+        "isEnglish": false
+    },
+    {
+        "id": 20922,
+        "name": "סמינר באינטליגנציה חישובית",
+        "credits": 3,
+        "prerequisites": [
+            20407,
+            20551
+        ],
+        "semesters": [
+            "C"
+        ],
+        "isAdvanced": true,
+        "isSemniarion": true,
+        "isWorkshop": false,
+        "isMandatory": false,
+        "isEnglish": false
+    },
+    {
+        "id": 20927,
+        "name": "סמינר באבטחת המרחב המקוון",
+        "credits": 3,
+        "prerequisites": [
+            20554,
+            20582,
+            20940
+        ],
+        "semesters": [
+            "A",
+            "B",
+            "C"
+        ],
+        "isAdvanced": true,
+        "isSemniarion": true,
+        "isWorkshop": false,
+        "isMandatory": false,
+        "isEnglish": false
+    }
+]
